@@ -1,0 +1,363 @@
+@charset "UTF-8"; /* for every browsers display same css. */
+
+* {
+    margin: 0;
+    padding: 0;
+ } /* all */
+
+a{
+    text-decoration: none; /* remove all hyperlinks underlines*/
+    color: red;
+} 
+
+p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #444;
+}
+
+.clearfix{
+    overflow: auto;
+}
+
+.wrapper{
+    margin: 0 auto; /*auto mean center,adjest full screen*/
+    width: 1000px;
+}
+
+.top-bar{
+    width: 1000px;
+    background-color: maroon;
+}
+
+.top-bar-links{
+    float: left; /*break lines left and right corners*/
+}
+
+.top-bar-links ul{
+    margin: 15px;
+    list-style: none; /*remove bullets*/
+}
+
+.top-bar-links ul li{
+    padding: 0 10px; /* top and bottom 0 , left and right 10 */
+    display: inline-block; /*display all in one line*/
+    border-right:1px solid white ; /* every links border*/
+}
+
+/*pseudo class*/
+.top-bar-links ul li:last-child{ /*remove last border */
+    border: 0; /*0 or none*/
+}
+
+.top-bar-links ul li a{
+    color: white;
+}
+
+.site-search{
+    margin: 15px;
+    padding: 2px 5px 3px 10px;
+    float: right; /*break lines left and right corners*/
+    background: white;
+    border-radius: 10px;
+}
+
+.site-search input{
+    border: 0; /*remove text box border*/
+    float: left;
+}
+
+.site-search button{
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon/search.png);
+    border: 0;
+    float: right;
+    background-size: contain; /* Scale image to fit inside */
+}
+
+.logo{
+    margin-top: 30px;
+    margin-left: 20px;
+    float: left; /*for same line SYSTEMETIC name and ICONS*/
+}
+
+.logo h1{
+    font-variant: small-caps; /*font style*/
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: -1px; /*letters gap*/
+}
+
+.socialmedia{
+    float: right; /*icons goes to right side*/
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.socialmedia ul{
+    list-style: none; /*remove bullets*/
+}
+
+.socialmedia ul li{
+    display: inline; /*display one line all icons*/
+}
+
+.socialmedia ul li a{
+    padding: 5px;
+    margin-left: 5px;
+    background-color: #444;
+    color: #fff;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.socialmedia ul li a:hover{
+    background: orange;
+}
+
+nav{
+    margin-top: 20px;
+    /* background: #000; */
+    background: linear-gradient(#0d0d0d, #404040,#0d0d0d); /* nav tag display 3 different colors. if you want we can add 
+    5 colors also. they display top to bottom that we apllied colours*/
+    text-align: center;
+    border-radius: 5px; /* nav box corners curve */
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    color: #fff;
+    text-transform: uppercase; /* letters transfer to capital letters */
+
+    /* margin-top: 10px;
+    margin-bottom: 10px; this doesnt work without using display:inline-block
+    margin-left: 40px;
+    margin-right: 40px; if you want like this you can use this also*/
+
+    /* or you can do like this
+    margin: 10px 40px 10px 40px; this call top-right-bottom-left values */
+
+    margin: 10px 40px; /* this call top-bottom-10px and left-right-40px */
+    display: inline-block;
+
+    /* margin: 10px - this display 15px all four sides */
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.intro{
+    width: 970px;
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+.introimage{
+    width: 420px;
+    float: left;
+}
+
+.introimage img{
+    
+    width: 420px;
+    height: auto;
+    float: left;
+}
+
+.introtext{
+    width: 550px;
+    float: left;
+}
+
+.introtext h1{
+    font-weight: normal;
+    margin-top: 100px;
+    font-size: 75px;
+    text-transform: uppercase;
+}
+
+.introtext p{
+    font-size: 18px;
+}
+
+.introtext a{
+    text-transform: uppercase;
+    float: right;
+}
+
+.homecontent{
+    width: 1000px;
+    background-color: #eee;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.home-col{
+    margin-left: 15px;
+    width: 313.33px;
+    float: left;
+}
+
+.home-col h2{
+    margin: 30px 0 30px 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.home-col img{
+    width: 313.33px;
+    height: 180px;
+}
+
+.home-col a{
+    float: right;
+}
+
+.services{
+    margin-bottom: 20px;
+}
+
+.services img{
+    width: 64px;
+    float: left;
+    margin-right: 15px;
+    height: auto;
+}
+
+.services p{
+    margin-top: 0;
+}
+
+.quote{
+    float: left;
+}
+
+.quote i{
+    float: left;
+}
+
+.quote h3{
+    margin-top: 20px;
+    margin-left: 15px;
+    float: left;
+}
+
+.quote p{
+    clear: both; /* top letters and bottom letters are same line. at that time we can add this.
+    it becomes two seperate lines  */
+}
+
+footer{
+    width: 1000px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.footercol{
+    width: 231.25px;
+    float: left;
+    margin-left: 15px;
+    border-top: 1px solid #000;
+}
+
+.footercol h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.tweet p{
+    font-size: 16px;
+}
+
+.quicklinks{
+    margin-top: 10px;
+    list-style: none;
+}
+
+.quicklinks li a{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    display: block; /* if margins not applied we can add display: block; */
+    border-bottom: 1px solid #aaa;
+    color: #666;
+}
+
+.quicklinks li a::before{
+    content: "» ";
+}
+
+.quicklinks li a:hover{
+    color: red;
+}
+
+.blogpost{
+    clear: both;
+}
+
+.blogpost h5{
+    font-size: 18px;
+}
+
+.blogpost p{
+    font-size: 15px;
+}
+
+.blogpost a.readmore{
+    float: right;
+}
+/* .readmore{float: right;} this is also correct */
+
+.contact input,.contact textarea{
+    background: #eee;
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 221.25px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.contact textarea{
+    height: 130px;
+}
+
+.contact button{
+    background: #eee;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.copyrights{
+    width: 1000px;
+    background: #eee;
+    float: left;
+}
+
+.left{
+    float: left;
+    margin: 20px;
+}
+
+.right{
+    float: right;
+    margin: 20px;
+}
