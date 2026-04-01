@@ -93,10 +93,3 @@ https://Vidushika0819.github.io/systematic/
 
 This project is licensed under the **MIT License**.  
 See the **LICENSE** file for details.
-
----
-
-## 👩‍💻 Developer
-
-**Vidushika Madhushani**  
-GitHub: https://github.com/Vidushika0819
